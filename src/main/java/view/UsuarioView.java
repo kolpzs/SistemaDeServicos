@@ -4,7 +4,6 @@ import controller.UsuarioController;
 import model.entity.UsuarioEntity;
 import model.repository.UsuarioRepository;
 import model.service.UsuarioService.CriarUsuario;
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -41,6 +40,7 @@ public class UsuarioView {
                     scannerUsuario.nextLine();
                     String nomeUsuario = scannerUsuario.nextLine();
                     System.out.println("Digite a senha do usuário:");
+                    scannerUsuario.nextLine();
                     String senhaUsuario = scannerUsuario.nextLine();
 
                     UsuarioEntity novoUsuario = usuarioController.criarUsuario(null, nomeUsuario, senhaUsuario);

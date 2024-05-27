@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class UsuarioRepository implements BasicCrud{
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("BancoMensal");
+    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("BancoMensal");
 
     @Override
     public Object create(Object object) {
