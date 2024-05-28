@@ -59,7 +59,6 @@ public class EnderecoView {
                     EnderecoEntity novoEndereco = enderecoController.criarEndereco(null, ruaEndereco, numeroCasa, bairroEndereco, cepEndereco, cidadeEndereco, cliente);
 
                     if (novoEndereco != null) {
-                        System.out.println("O endereço foi criado com sucesso!");
                         System.out.println("ID do endereço: " + novoEndereco.getId());
                         System.out.println("Rua: " + novoEndereco.getRua());
                         System.out.println("Número da casa: " + novoEndereco.getNumeroCasa());
